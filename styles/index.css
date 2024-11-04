@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Silkscreen&display=swap');
+
+:root {
+    --background-color: #d7e8ba;
+    --main-font-color: #2e5077;
+    --nav-menu-background: #ffa630;
+    --special-font-color: #611c35;
+    --special-background-color: #4da1a9;
+    --special-background-font-color: #fff;
+
+}
