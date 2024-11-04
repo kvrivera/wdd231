@@ -2,12 +2,27 @@
 <html lang="en">
 
 <head>
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css"> <!-- Include before any other CSS reference -->
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!-- JS -->
+    <script src="scripts/menu.js" defer></script> <!-- responsive nav menu -->
+    <script src="scripts/getdates.js" defer></script> <!-- Last modified, current year for &copy in footer -->
+    <script src="scripts/certificate-courses.js" defer></script>
+    <!-- certificate courses array and responsive design -->
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Silkscreen&display=swap" rel="stylesheet">
+
+    <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kathleen Rivera">
+    <meta name="description"
+        content="Home page for Kathleen Rivera's course website, created for BYU-I's course, WDD231.">
     <title>WDD231 | Kathleen Rivera</title>
 </head>
 
@@ -16,19 +31,19 @@
         <h1>
             WDD231 | Kathleen Rivera
         </h1>
-        <nav>
+        <nav id="main-menu">
             <ul>
                 <li>
-                    Home
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    Chamber
+                    <a href="chamber.html">Chamber</a>
                 </li>
                 <li>
-                    GitHub Profile
+                    <a href="github-profile.html">GitHub Profile</a>
                 </li>
                 <li>
-                    LinkedIn
+                    <a href="https://www.linkedin.com/in/katrivera/">LinkedIn</a>
                 </li>
             </ul>
         </nav>
