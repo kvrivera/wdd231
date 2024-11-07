@@ -11,34 +11,102 @@
     --border-color: #611c35;
     --special-background-color: #4da1a9;
     --special-background-font-color: #fff;
+}
 
+.page-banner {
+    background-color: var(--special-background-color);
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+}
 
+.page-banner h1 {
+    margin-top: 2.2rem;
+    /* brings it down to center vertically */
+}
+
+.page-banner img {
+    border-radius: 5rem;
+    padding: 5px;
+    max-width: 200px;
 }
 
 ul {
     list-style-type: none;
-    /* removes bullet styling on li items */
+    /* removes bullet styling on ul li items */
 }
 
+/* main nav menu */
 #main-menu {
+    padding: 1rem;
     background-color: var(--nav-menu-background);
-    font-family: var(--main-font);
-    display:
 }
+
+#main-menu ul {
+    font-family: var(--main-font);
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#main-menu li {
+    justify-content: space-evenly;
+}
+
+#main-menu a:link {
+    color: var(--main-font-color);
+}
+
+#main-menu a:visited {
+    color: var(--special-background-color);
+}
+
+#main-menu a:hover {
+    font-family: var(--header-font);
+}
+
 
 body {
     background-color: var(--background-color);
+}
+
+main {
+    font-family: var(--main-font);
+}
+
+/* place div */
+.place {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 2fr;
+    justify-items: center;
 
 }
 
+.place h2 {
+    width: 100%;
+}
+
+.place figure {
+    max-width: 200px;
+}
+
+.place img {
+    max-width: 200px;
+}
+
+/* headings */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+    background-color: var(--special-background-color);
     font-family: var(--header-font);
     color: var(--header-font-color);
+    align-items: center;
+    text-align: center;
 }
 
 p {
@@ -46,12 +114,20 @@ p {
     color: var(--main-font-color);
 }
 
+footer {
+    display: grid;
+    justify-content: center;
+}
+
 /* bigger screen */
 @media (min-width: 780px) {
-    #main-menu {
-        display: flex;
-        flex-direction: row;
+    .page-banner {
         justify-content: space-around;
-        font-family: var(--main-font);
     }
+
+    .page-banner h1 {
+        margin-top: 3rem;
+        /* brings name down to center vertically */
+    }
+
 }
