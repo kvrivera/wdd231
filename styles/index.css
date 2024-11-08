@@ -81,6 +81,7 @@ ul {
 
 #main-menu a:link {
     color: var(--main-font-color);
+    text-decoration: none;
 }
 
 #main-menu a:visited {
@@ -93,6 +94,12 @@ ul {
     font-size: larger;
 }
 
+.active::before {
+    content: "👀 ";
+    font-size: larger;
+    /* symbol to show on the menu what page the user is currently on, ie: wayfinding symbol */
+}
+
 body {
     background-color: var(--background-color);
 }
@@ -103,7 +110,7 @@ main {
 
 .course-work h2,
 .certificate h2 {
-    padding: 12px;
+    padding: 13.5px;
 }
 
 /* place div */
@@ -117,7 +124,8 @@ main {
 
 .place h2 {
     width: 100%;
-    padding-top: 10px;
+    padding-top: 9px;
+    padding-bottom: 4px;
     /* centers the text vertically */
 }
 
@@ -146,12 +154,61 @@ h6 {
     color: var(--header-font-color);
     align-items: center;
     text-align: center;
-    padding: 5px;
+    padding: 3px;
 }
 
 p {
     font-family: var(--main-font);
     color: var(--main-font-color);
+}
+
+.course-cards {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1f 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.course-cards figure {
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 100px;
+
+}
+
+.course-card {
+    font-family: var(--main-font);
+}
+
+.course-card.completed {
+    background-color: var(--special-background-font-color);
+}
+
+/* certificate section */
+/* button toggles */
+/* all courses button */
+#all.open {
+    font-family: var(--header-font);
+}
+
+.course-cards.open {
+    /* what it looks like all the time anyways */
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1f 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* cse courses button */
+#cse.open {
+    font-family: var(--header-font);
 }
 
 footer {
@@ -182,6 +239,7 @@ footer p {
 
     #main-menu {
         display: flex;
+        justify-content: space-evenly;
         padding: 1rem;
         background-color: var(--nav-menu-background);
     }

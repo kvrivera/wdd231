@@ -77,7 +77,51 @@ const courses = [
         completed: false
     }
 ]
+const courseCardDiv = document.querySelector(".course-cards"); // find the spot to update the course cards
 // Dynamically (use JavaScript) to display all the courses in the certificate section as shown in the example with the courses that you have completed clearly marked in a different way and that fits your color scheme. The page should adjust automatically if the data source changes.
+// First create a 'card' function
+function createCourseCard(courseList) {
+    courseCardDiv.innerHTML = ""; // clear any existing content (makes things less buggy later)
+    courseList.forEach(function (course) {
+        const card = document.createElement("figure");
+        card.classList.add("course-card"); // give them all course-card as a class
+        if (course.completed == true) {
+            card.classList.add("completed"); // if course is completed, give it a class you can style to make the card look different
+        }
+        card.innerHTML = `
+            <p> ${course.subject}${course.number}</p>
+        `;
+        courseCardDiv.appendChild(card); // add the card to the div
+    })
+}
+
+createCourseCard(courses); // now call the function for real
+
 //Allow the user to dynamically show only CSE or only WDD courses or all courses when clicking the appropriately labeled button. (filter)
+const allButton = document.querySelector("#all");
+const cseButton = document.querySelector('#cse');
+const wddButton = document.querySelector('#wdd');
+
+allButton.addEventListener('click', () => {
+    allButton.classList.toggle('open');
+    wddButton.classList.remove('open'); // turn wdd button 'off'
+    cseButton.classList.remove('open'); // turn cse button off
+    courseCardDiv.classList.toggle('open');
+    createCourseCard(courses);
+});
+cseButton.addEventListener('click', () => {
+    cseButton.classList.toggle('open');
+    allButton.classList.remove('open'); // turn 'all' button off
+    wddButton.classList.remove('open'); // turn 'wdd' button off
+    const cseCourses = courses.filter(course => course.subject == "CSE");
+    createCourseCard(cseCourses);
+});
+wddButton.addEventListener('click', () => {
+    wddButton.classList.toggle('open');
+    cseButton.classList.remove('open'); // turn 'cse' button off
+    allButton.classList.remove('open'); // turn 'all' button off
+    const wddCourses = courses.filter(course => course.subject == "WDD");
+    createCourseCard(wddCourses);
+});
 //Design the course cards to indicate those courses that you have completed in a complimentary, but different style than the rest.
 //Provide a total number of credits required dynamically by using a reduce function (not shown on the screenshots). The number of credits shown should reflect just the courses currently being diplayed.
