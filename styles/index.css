@@ -162,27 +162,36 @@ p {
     color: var(--main-font-color);
 }
 
-.course-cards {
+.certificate {
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.certificate-buttons {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    background-color: var(--nav-menu-background);
+    padding: 2rem;
+}
+
+div.course-cards {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.course-cards figure {
+.course-card {
+    font-family: var(--main-font);
     padding: 5px;
     border: 1px solid var(--border-color);
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     text-align: center;
     width: 100px;
-
-}
-
-.course-card {
-    font-family: var(--main-font);
 }
 
 .course-card.completed {
@@ -192,8 +201,18 @@ p {
 /* certificate section */
 /* button toggles */
 /* all courses button */
-#all.open {
+#all,
+#cse,
+#wdd {
+    border: 1px solid var(--border-color);
+    border-radius: .3rem;
+}
+
+#all.open,
+#cse.open,
+#wdd.open {
     font-family: var(--header-font);
+    background-color: var(--nav-menu-background);
 }
 
 .course-cards.open {
@@ -203,14 +222,9 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-content: space-evenly;
-    align-items: center;
 }
 
-/* cse courses button */
-#cse.open {
-    font-family: var(--header-font);
-}
-
+/* footer */
 footer {
     display: grid;
     justify-content: center;
@@ -255,7 +269,6 @@ footer p {
         padding: 1rem;
         background-color: var(--nav-menu-background);
     }
-
 
     main {
         display: grid;
