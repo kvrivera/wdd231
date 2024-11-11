@@ -1,0 +1,23 @@
+{
+    "familyName": "Villanueva",
+    "dateMoveIn": "April 1, 2020",
+    "numRecords": 3,
+    "bishopricVisited": false,
+    "famMembers": [
+        {
+            "name": "Jenny",
+            "gender": "female",
+            "bday": "Jan 4, 1990"
+        },
+        {
+            "name": "Philip",
+            "gender": "male",
+            "bday": "Jan 5, 1978"
+        },
+        {
+            "name": "Brian",
+            "gender": "male",
+            "bday": "June 6, 2027"
+        }
+    ]
+}
