@@ -28,8 +28,8 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastName}`);
         portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440');
+        portrait.setAttribute('width', '300');
+        portrait.setAttribute('height', '400');
 
         // bday <p>
         bday.innerText = `Date of Birth: ${prophet.birthdate}`;
@@ -39,9 +39,10 @@ const displayProphets = (prophets) => {
 
         // appending so they show up
         card.appendChild(fullName);
-        card.appendChild(portrait);
         card.appendChild(bday);
         card.appendChild(birthplace);
+        card.appendChild(portrait);
+
 
         cards.appendChild(card);
 
