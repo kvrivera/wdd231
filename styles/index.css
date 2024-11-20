@@ -17,6 +17,20 @@ header {
     font-family: var(--main-font);
 }
 
+a:link {
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--special-background-color);
+}
+
+a:hover {
+    font-family: var(--header-font);
+    color: var(--header-font-color);
+}
+
 .page-banner {
     background-color: var(--special-background-color);
     text-align: center;
@@ -41,14 +55,30 @@ ul {
     /* removes bullet styling on ul li items */
 }
 
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
 
 /* main nav menu */
 /* hamburger menu */
 #main-menu {
-    display: none;
+    /* display: none; */
     /* hide the menu behind the hamburger button in mobile view */
-    padding: 1rem;
     background-color: var(--nav-menu-background);
+}
+
+#main-menu li {
+    padding: 1rem;
 }
 
 #hamburger {
@@ -63,9 +93,9 @@ ul {
     /* before the user clicks it open */
 }
 
-.open a {
+/*.open a {
     display: block;
-}
+}*/
 
 #hamburger.open::before {
     content: "✖️";
@@ -247,6 +277,10 @@ footer p {
     }
 
     /* main nav */
+    nav {
+        grid-template-rows: 1fr;
+    }
+
     #hamburger {
         display: none;
     }
