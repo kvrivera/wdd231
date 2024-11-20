@@ -1,5 +1,21 @@
 /*
 2 main colors: #236E26; 3E236E;
-background-color: #F5F7FA;
+background-color: 
 */
+
+:root {
+    --background-color: #F5F7FA;
+}
+* {
+    max-width: 900px;
+    background-color: var(--background-color);
+}
+
+footer {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    
+}
+
 
