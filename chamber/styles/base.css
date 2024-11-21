@@ -179,12 +179,13 @@ main {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
-    max-width: 100vh;
+    max-width: 100vw;
     height: 280px;
     border: solid black;
     border-radius: 1rem;
     margin: 5px;
     padding-left: 15px;
+    font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 .cards-grid section h2 {
