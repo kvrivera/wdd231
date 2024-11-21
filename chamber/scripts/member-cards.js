@@ -46,8 +46,8 @@ const displayMembers = (members) => {
         logo.setAttribute('src', member.imgFile);
         logo.setAttribute('alt', `Business logo for ${member.name}.`);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '200');
-        logo.setAttribute('height', '150');
+        //logo.setAttribute('width', '150');
+        //logo.setAttribute('height', '75');
 
         // append so they show up on card
         card.appendChild(logo);
