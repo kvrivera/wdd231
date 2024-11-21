@@ -20,12 +20,12 @@ const displayMembers = (members) => {
     members.forEach((member) => {
         let card = document.createElement("section");
         let companyName = document.createElement('h2');
-        let phoneNumber = document.createElement('p');
-        phoneNumber.classList.add('phone-number'); // add class for CSS
         let address = document.createElement('p');
-        address.classList.add('address'); // add class for CSS
+        //address.classList.add('address'); // add class for CSS
+        let phoneNumber = document.createElement('p');
+        //phoneNumber.classList.add('phone-number'); // add class for CSS
         let url = document.createElement('p');
-        url.classList.add('url'); // add class for CSS
+        //url.classList.add('url'); // add class for CSS
         let logo = document.createElement('img');
 
         // <h2> for companyName
@@ -60,11 +60,22 @@ const displayMembers = (members) => {
     })
 }
 
-//Store the response from the fetch() method in a const variable 
-// named "response".
+//Allow the user to dynamically show only CSE or only WDD courses or all courses when clicking the appropriately labeled button. (filter)
+const cardsGridButton = document.querySelector("#cards-grid");
+const cardsListButton = document.querySelector('#cards-list');
 
-//Convert the response to a JSON object using the .json method and 
-// store the results in a const variable named "data".
+cardsGridButton.addEventListener('click', () => {
+    cardsGridButton.classList.toggle('open');
+    cards.classList.add('cards-grid');
+    cardsListButton.classList.remove('open');  // turn cardsListButton off
+    getMemberData(); // create the member cards
+})
 
-//Add a console.table() expression method to check the data 
-// response at this point in the console window.
+cardsListButton.addEventListener('click', () => {
+    cardsListButton.classList.toggle('open');
+    cards.classList.remove('cards-grid'); // remove the css class that styles for cards
+    cards.classList.add('members-list');
+    cardsGridButton.classList.remove('open'); // turn cardsGridButton off
+
+    // using CSS, the 'cards' will be turned into a list
+})
