@@ -179,7 +179,7 @@ main {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
-    width: 420px;
+    max-width: 100vh;
     height: 280px;
     border: solid black;
     border-radius: 1rem;
