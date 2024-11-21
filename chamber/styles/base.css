@@ -234,11 +234,20 @@ main {
 
 
 /* FOOTER */
+footer,
+footer div,
+.lastMod,
+.currentYear,
+footer div>* {
+    background-color: var(--nav-bkgd-color) !important;
+    color: #fff;
+}
+
 footer {
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin: 16px;
+    margin: 0px;
     padding: 10px;
 }
 
