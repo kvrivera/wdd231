@@ -67,6 +67,7 @@ const cardsListButton = document.querySelector('#cards-list');
 cardsGridButton.addEventListener('click', () => {
     cardsGridButton.classList.toggle('open');
     cards.classList.add('cards-grid');
+    cards.classList.remove('members-list');
     cardsListButton.classList.remove('open');  // turn cardsListButton off
     getMemberData(); // create the member cards
 })
