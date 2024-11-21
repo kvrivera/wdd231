@@ -21,18 +21,21 @@ const displayMembers = (members) => {
         let card = document.createElement("section");
         let companyName = document.createElement('h2');
         let phoneNumber = document.createElement('p');
+        phoneNumber.classList.add('phone-number'); // add class for CSS
         let address = document.createElement('p');
+        address.classList.add('address'); // add class for CSS
         let url = document.createElement('p');
+        url.classList.add('url'); // add class for CSS
         let logo = document.createElement('img');
 
         // <h2> for companyName
         companyName.textContent = `${member.name}`;
 
         // <p> for phoneNumber
-        phoneNumber.innerText = `PHONE: ${member.phoneNumber}`;
+        phoneNumber.textContent = `PHONE: ${member.phoneNumber}`;
 
         // <p> for address
-        address.innerText = `ADDRESS: ${member.address}`;
+        address.textContent = `ADDRESS: ${member.address}`;
 
         // <p> for URL
         url.innerHTML = `
@@ -43,8 +46,8 @@ const displayMembers = (members) => {
         logo.setAttribute('src', member.imgFile);
         logo.setAttribute('alt', `Business logo for ${member.name}.`);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '300');
-        logo.setAttribute('height', '250');
+        logo.setAttribute('width', '200');
+        logo.setAttribute('height', '150');
 
         // append so they show up on card
         card.appendChild(logo);
