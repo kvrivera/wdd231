@@ -10,6 +10,7 @@ https://coolors.co/f5f7fa-3e236e-7d82b8-236e26-d6d84f
     --bkgd-hover-color: #7D82B8;
     --secondary-color: #236E26;
     --secondary-accent: #add84f;
+    --special-font: "Passion One", serif;
 }
 
 * {
@@ -150,7 +151,7 @@ main {
 }
 
 .members-list h2 {
-    font-size: large;
+    font-family: var(--special-font);
 }
 
 .members-list img {
@@ -190,6 +191,7 @@ main {
     grid-column: 1/3;
     grid-row: 1/2;
     text-align: center;
+    font-family: var(--special-font);
 }
 
 .cards-grid section img {
