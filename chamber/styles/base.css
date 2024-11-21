@@ -212,13 +212,13 @@ main {
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     margin: 16px;
     padding: 10px;
 }
 
 footer p {
-    font-size: .7rem;
+    font-size: clamp(0.7rem, 2vw, 1rem);
     min-width: 20px;
 }
 
@@ -256,5 +256,11 @@ footer p {
         padding: .5rem;
         font-size: larger;
     }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+    }
+
 
 }
