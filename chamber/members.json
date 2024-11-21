@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Jax Jungle Play",
+            "address": "520 Dundas St, Woodstock, ON N4S 1C5",
+            "phoneNumber": "(519) 537-5333",
+            "url": "https://jaxjungleplay.com/",
+            "imgFile": "images/jax-jungle-logo.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "The Woodstock School of Dance and Yoga",
+            "address": "30 Reeve St (Unit 101), Woodstock, ON N4S 3G4",
+            "phoneNumber": "(226) 228-5673",
+            "url": "https://woodstockdanceyoga.com/",
+            "imgFile": "images/wsoday-logo.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Woodstock Memorials",
+            "address": "1057 Parkinson Road (Unit 2), Woodstock, ON N4S 7W3",
+            "phoneNumber": "(519) 421 2427",
+            "url": "https://www.superiormemorials.com/copy-of-kitchener-5",
+            "imgFile": "images/woodstock-memorials-logo.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Baby Bumpz",
+            "address": "395 Dundas Street, Woodstock ON N4S 1B6",
+            "phoneNumber": "(216) 213-3788",
+            "url": "https://babybumpzwoodstock.wordpress.com/",
+            "imgFile": "images/baby-bumpz-logo.png",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Habitual Chocolate",
+            "address": "389 Dundas St, Woodstock, ON N4S 1B6",
+            "phoneNumber": "(519) 535-1341",
+            "url": "https://www.habitualchocolate.com/",
+            "imgFile": "images/habitual-chocolate-logo.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Millard Glass Windows and Doors",
+            "address": "338 Dundas St (Unit 104), Woodstock, ON Canada N4S 1B4",
+            "phoneNumber": "(519) 421-1335",
+            "url": "https://millardglass.com/",
+            "imgFile": "images/millard-logo.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Nerdz Game Café",
+            "address": "365 Dundas St Woodstock, ON N4S 1B6",
+            "phoneNumber": "519-290-9598",
+            "url": "https://nerdzgaming.com/",
+            "imgFile": "images/nerdz-game-cafe-logo.webp",
+            "membershipLevel": 1
+        }
+    ]
+}
