@@ -4,18 +4,123 @@ background-color:
 */
 
 :root {
+    --main-font: "Lato", serif;
     --background-color: #F5F7FA;
+    --nav-bkgd-color: #3E236E;
+    --bkgd-hover-color: #7D82B8;
+    --secondary-color: #236E26;
 }
+
 * {
     max-width: 900px;
     background-color: var(--background-color);
 }
 
+body {
+    font-family: var(--main-font);
+}
+
+/* MAIN NAV */
+/* MAIN NAV */
+/* MAIN NAV */
+#hamburger {
+    background-color: #F5F7FA;
+    ;
+    border: none;
+    color: #3E236E;
+}
+
+/* before the user clicks hamburger button open */
+#hamburger::before {
+    content: "☰";
+    font-size: xx-large;
+}
+
+/* the 'close' button says this on it when the menu is toggled open */
+#hamburger.open::before {
+    content: "✖️";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+    background-color: var(--nav-menu-background);
+}
+
+nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    /* removes bullet styling on ul li items */
+}
+
+/* hamburger button clicked open */
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+/* menu option responsiveness */
+#main-menu,
+#main-menu li,
+#main-menu a {
+    background-color: var(--nav-bkgd-color);
+}
+
+#main-menu li {
+    padding: 1rem;
+}
+
+#main-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#active {
+    background-color: var(--bkgd-hover-color);
+}
+
+#main-menu a:visited {
+    text-decoration: none;
+    font-weight: 200;
+}
+
+#main-menu a:hover {
+    font-style: italic;
+}
+
+/* wayfinding symbol to show the current page */
+.active::after {
+    content: " 📍";
+}
+
+
+
 footer {
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
-    
 }
 
+/* MEDIA QUERIES */
+/* SMALL SCREENS AND LAPTOPS */
+@media (min-width: 768px) {
+    nav {
+        grid-template-rows: 1fr;
+    }
 
+    #hamburger {
+        display: none;
+    }
+
+    #main-menu {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    #main-menu li {
+        justify-content: space-evenly;
+        padding: .5rem;
+    }
+
+}
