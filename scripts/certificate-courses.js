@@ -77,6 +77,10 @@ const courses = [
         completed: false
     }
 ]
+const numCreditsP = document.querySelector("#num-credits"); // the <p> element that will house the # of credits
+const numCredits = courses.length; // calculate how many credits are in the courses array
+numCreditsP.textContent += `${numCredits}`;
+
 const courseCardDiv = document.querySelector(".course-cards"); // find the spot to update the course cards
 // Dynamically (use JavaScript) to display all the courses in the certificate section as shown in the example with the courses that you have completed clearly marked in a different way and that fits your color scheme. The page should adjust automatically if the data source changes.
 // First create a 'card' function

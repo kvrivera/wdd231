@@ -9,7 +9,7 @@
     --main-font-color: #2e5077;
     --nav-menu-background: #ffa630;
     --border-color: #611c35;
-    --special-background-color: #4da1a9;
+    --special-background-color: #84dae2;
     --special-background-font-color: #fff;
 }
 
@@ -190,6 +190,7 @@ h6 {
 p {
     font-family: var(--main-font);
     color: var(--main-font-color);
+    text-align: center;
 }
 
 .certificate {
