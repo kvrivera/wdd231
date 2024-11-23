@@ -23,7 +23,7 @@ a:link {
 }
 
 a:visited {
-    color: var(--special-background-color);
+    color: var(--main-font-color);
 }
 
 a:hover {
@@ -115,7 +115,7 @@ nav.open {
 }
 
 #main-menu a:visited {
-    color: var(--special-background-color);
+    font-style: italic;
 }
 
 #main-menu a:hover {
