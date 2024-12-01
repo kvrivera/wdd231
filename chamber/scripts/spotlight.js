@@ -39,7 +39,7 @@ const displayMembers = (members) => {
     const randomMembers = getRandomMembers(members, 3);
     randomMembers.forEach((randomMember) => {
         let card = document.createElement("section");
-        let companyName = document.createElement('h2');
+        let companyName = document.createElement('h3');
         let address = document.createElement('p');
         //address.classList.add('address'); // add class for CSS
         let phoneNumber = document.createElement('p');
