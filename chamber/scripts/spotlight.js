@@ -47,6 +47,7 @@ const displayMembers = (members) => {
         let url = document.createElement('p');
         //url.classList.add('url'); // add class for CSS
         let logo = document.createElement('img');
+        let membershipLevel = document.createElement('p');
 
         // <h2> for companyName
         companyName.textContent = `${randomMember.name}`;
@@ -69,12 +70,16 @@ const displayMembers = (members) => {
         //logo.setAttribute('width', '150');
         //logo.setAttribute('height', '75');
 
+        // <p> for membershipLevel
+        membershipLevel.textContent = `${randomMember.membershipLevel} Member`;
+
         // append so they show up on card
         card.appendChild(logo);
         card.appendChild(companyName);
         card.appendChild(phoneNumber);
         card.appendChild(address);
         card.appendChild(url);
+        card.appendChild(membershipLevel);
 
         cards.appendChild(card);
     })

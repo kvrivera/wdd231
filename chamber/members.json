@@ -6,7 +6,7 @@
             "phoneNumber": "(519) 537-5333",
             "url": "https://jaxjungleplay.com/",
             "imgFile": "images/jax-jungle-logo.webp",
-            "membershipLevel": 3
+            "membershipLevel": "Gold"
         },
         {
             "name": "The Woodstock School of Dance & Yoga",
@@ -14,7 +14,7 @@
             "phoneNumber": "(226) 228-5673",
             "url": "https://woodstockdanceyoga.com/",
             "imgFile": "images/wsoday-logo.webp",
-            "membershipLevel": 2
+            "membershipLevel": "Silver"
         },
         {
             "name": "Woodstock Memorials",
@@ -22,7 +22,7 @@
             "phoneNumber": "(519) 421 2427",
             "url": "https://www.superiormemorials.com/copy-of-kitchener-5",
             "imgFile": "images/woodstock-memorials-logo.webp",
-            "membershipLevel": 2
+            "membershipLevel": "Gold"
         },
         {
             "name": "Baby Bumpz",
@@ -30,7 +30,7 @@
             "phoneNumber": "(216) 213-3788",
             "url": "https://babybumpzwoodstock.wordpress.com/",
             "imgFile": "images/baby-bumpz-logo.webp",
-            "membershipLevel": 1
+            "membershipLevel": "Silver"
         },
         {
             "name": "Habitual Chocolate",
@@ -38,7 +38,7 @@
             "phoneNumber": "(519) 535-1341",
             "url": "https://www.habitualchocolate.com/",
             "imgFile": "images/habitual-chocolate-logo.webp",
-            "membershipLevel": 3
+            "membershipLevel": "Gold"
         },
         {
             "name": "Millard Glass Windows and Doors",
@@ -46,7 +46,7 @@
             "phoneNumber": "(519) 421-1335",
             "url": "https://millardglass.com/",
             "imgFile": "images/millard-logo.webp",
-            "membershipLevel": 2
+            "membershipLevel": "Gold"
         },
         {
             "name": "Nerdz Game Café",
@@ -54,7 +54,7 @@
             "phoneNumber": "519-290-9598",
             "url": "https://nerdzgaming.com/",
             "imgFile": "images/nerdz-game-cafe-logo.webp",
-            "membershipLevel": 1
+            "membershipLevel": "Silver"
         }
     ]
 }
