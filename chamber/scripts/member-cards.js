@@ -16,7 +16,7 @@ getMemberData();
 
 const displayMembers = (members) => {
     // card build goes here
-    cards.innerHTML = "";
+    cards.innerHTML = " ";
     members.forEach((member) => {
         let card = document.createElement("section");
         let companyName = document.createElement('h2');
