@@ -9,7 +9,7 @@ https://coolors.co/f5f7fa-3e236e-7d82b8-236e26-d6d84f
     --nav-bkgd-color: #3E236E;
     --bkgd-hover-color: #7D82B8;
     --secondary-color: #236E26;
-    --secondary-accent: #add84f;
+    --secondary-accent: #7c934b;
     --special-font: "Passion One", serif;
 }
 
@@ -32,7 +32,7 @@ h1 {
     display: grid;
     grid-auto-flow: column;
     gap: 16px;
-    margin: 2rem;
+    margin: 0 auto;
     align-items: center;
 }
 
@@ -113,6 +113,47 @@ nav.open {
 /* wayfinding symbol to show the current page */
 .active::after {
     content: " 📍";
+}
+
+/* INDEX (HOME) HERO IMAGE */
+/* INDEX (HOME) HERO IMAGE */
+/* INDEX (HOME) HERO IMAGE */
+.hero {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: (400px, 50vh, 800px);
+
+}
+
+.hero a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.hero img {
+    background-size: cover;
+}
+
+.hero .join-button {
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+    padding: .7rem;
+    background-color: #236E26;
+    color: white;
+    z-index: 2;
+    /* Ensure it stays above other content */
+    font-size: clamp(1rem, 2vw, 2rem);
+    /* Minimum of 1rem, scales with 2vw, max of 2rem */
+}
+
+.hero .join-button:hover {
+    background-color: var(--secondary-accent);
 }
 
 main {
@@ -289,6 +330,12 @@ footer p {
         justify-content: space-evenly;
         padding: .5rem;
         font-size: larger;
+    }
+
+    .hero {
+        max-width: 1200px;
+        margin: 0 auto;
+        /* centers the .hero class horizontally on the page */
     }
 
     footer {
