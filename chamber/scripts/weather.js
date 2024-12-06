@@ -71,8 +71,17 @@ function displayForecast(forecastData) {
     forecastTemp.innerHTML = `${forecastData.list[22].main.temp}&deg;C`;
     let forecastIconNumber = forecastData.list[22].weather[0].icon; // weather forecast icon
     const forecastIconSrc = `https://openweathermap.org/img/w/${forecastIconNumber}.png`; // weather forecast icon
-    weatherIcon.setAttribute('src', `${forecastIconSrc}`);
-    weatherIcon.setAttribute('alt', `${forecastData.list[22].weather[0].description}`);
+
+    let weatherIconImage = document.createElement("img");
+    weatherIconImage.setAttribute('src', `${forecastIconSrc}`);
+    weatherIconImage.setAttribute('alt', `${forecastData.list[22].weather[0].description}`);
+
+    let weatherIconFigCaption = document.createElement("figcaption");
+    weatherIconFigCaption.textContent = `Expect ${forecastData.list[22].weather[0].description}`;
+
+    weatherIcon.appendChild(weatherIconImage);
+    weatherIcon.appendChild(weatherIconFigCaption);
+
     // weatherIcon.setAttribute('src', '');
     // weatherIcon.setAttribute('alt', '');
     //captionDesc.textContent = `${desc}`;
