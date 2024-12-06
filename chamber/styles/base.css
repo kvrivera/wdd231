@@ -124,7 +124,8 @@ nav.open {
     height: auto;
     display: flex;
     flex-direction: column;
-    height: (400px, 50vh, 800px);
+    height: clamp(400px, 50vh, 800px);
+    /*added clamp*/
     margin-bottom: .5rem;
 }
 
@@ -265,7 +266,7 @@ main {
     max-width: 200px;
     max-height: 150px;
     object-fit: cover;
-    transition: transform 0.3 ease;
+    transition: (transform 0.3 ease);
 }
 
 .cards-grid p,
@@ -343,7 +344,7 @@ footer div>* {
 footer div.footer-flexbox {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: left baseline;
     margin: 0 auto;
     padding: 10px;
 }
@@ -398,7 +399,7 @@ footer p {
         flex-direction: row;
         width: 100vw;
         height: auto;
-        height: (400px, 50vh, 800px);
+        height: clamp(400px, 50vh, 800px);
     }
 
     .info-panel-flexbox .current-events {
