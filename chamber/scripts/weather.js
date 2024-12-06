@@ -18,6 +18,7 @@ const weatherForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat
 async function apiFetch() {
     // current weather API
     try {
+        d
         const response = await fetch(currentWeatherURL); // fetch data from API
         if (response.ok) {
             const data = await response.json(); // convert the data received to JSON
@@ -66,6 +67,8 @@ function displayResults(data) {
 
     let currentWeatherIconFigCaption = document.createElement("figcaption");
     currentWeatherIconFigCaption.textContent = `Expect ${data.weather[0].description}`;
+    currentWeatherIcon.appendChild(currentWeatherIconImage);
+    currentWeatherIcon.appendChild(currentWeatherIconFigCaption);
 }
 
 
