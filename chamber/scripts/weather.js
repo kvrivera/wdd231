@@ -58,10 +58,14 @@ function displayResults(data) {
     currentTemp.innerHTML = '';
     currentTemp.innerHTML = `${data.main.temp}&deg;C (feels like ${data.main.feels_like}&deg;C)`; // show the temperature in degrees C
 
+    let currentWeatherIconImage = document.createElement("img");
     let iconNumber = data.weather[0].icon; // current weather icon
     const iconsrc = `https://openweathermap.org/img/w/${iconNumber}.png`; // weather icon
-    currentWeatherIcon.setAttribute('src', `${iconsrc}`);
+    currentWeatherIconImage.setAttribute('src', `${iconsrc}`);
     currentWeatherIcon.setAttribute('alt', `${data.weather[0].description}`);
+
+    let currentWeatherIconFigCaption = document.createElement("figcaption");
+    currentWeatherIconFigCaption.textContent = `Expect ${data.weather[0].description}`;
 }
 
 
@@ -81,8 +85,4 @@ function displayForecast(forecastData) {
 
     weatherIcon.appendChild(weatherIconImage);
     weatherIcon.appendChild(weatherIconFigCaption);
-
-    // weatherIcon.setAttribute('src', '');
-    // weatherIcon.setAttribute('alt', '');
-    //captionDesc.textContent = `${desc}`;
 }
