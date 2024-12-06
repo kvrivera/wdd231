@@ -297,6 +297,8 @@ main {
     margin: 1rem;
     margin-bottom: .5rem;
     margin-top: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .info-panel-flexbox h3 {
@@ -319,6 +321,8 @@ main {
 #spotlight {
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /* FOOTER */
