@@ -279,6 +279,8 @@ main {
 /* HOME PAGE INFO-PANEL-FLEXBOX */
 /* HOME PAGE INFO-PANEL-FLEXBOX */
 /* HOME PAGE INFO-PANEL-FLEXBOX */
+.info-panel-heading {}
+
 .info-panel-flexbox {
     display: flex;
     flex-direction: column;
@@ -308,7 +310,8 @@ main {
 /* SPOTLIGHT */
 /* SPOTLIGHT */
 /* SPOTLIGHT */
-.spotlight-container h2 {
+.spotlight-container h2,
+.info-panel-heading {
     text-align: center;
     font-family: var(--special-font);
     color: white;
