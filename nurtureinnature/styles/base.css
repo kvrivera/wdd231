@@ -86,7 +86,8 @@ nav a {
     /* removes underline from links */
 }
 
-nav li:hover, nav li:hover a {
+nav li:hover,
+nav li:hover a {
     background-color: var(--compl-color-3);
     color: #fff;
 }
