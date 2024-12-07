@@ -27,6 +27,10 @@
     /* removes bullets from list */
 }
 
+h2 {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
 }
@@ -67,27 +71,27 @@ a {
 }
 
 /* sleek responsive nav */
-nav {
+.site-nav {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
 }
 
-nav ul {
+.site-nav ul {
     overflow: hidden;
 }
 
-nav.open {
+.site-nav.open {
     grid-template-rows: 1fr;
 }
 
-nav a {
+.site-nav a {
     text-decoration: none;
     /* removes underline from links */
 }
 
-nav li:hover,
-nav li:hover a {
+.site-nav li:hover,
+.site-nav li:hover a {
     background-color: var(--compl-color-3);
     color: #fff;
 }

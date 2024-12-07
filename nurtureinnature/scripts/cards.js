@@ -75,6 +75,7 @@ const displayPlaces = (places) => {
 }
 
 // ideas for filters:
+// all locations
 // playgrounds
 // splashpads
 // trails
