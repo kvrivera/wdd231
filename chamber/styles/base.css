@@ -324,8 +324,8 @@ main {
 #spotlight {
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 /* FOOTER */
@@ -399,15 +399,6 @@ footer p {
         width: 100vw;
         height: auto;
         height: clamp(400px, 50vh, 800px);
-    }
-
-    .info-panel-flexbox .current-events {
-        flex-grow: 2;
-    }
-
-    .info-panel-flexbox .current-weather,
-    .weather-forecast {
-        flex-grow: 1;
     }
 
     #spotlight {
