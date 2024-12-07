@@ -1,10 +1,22 @@
 :root {
-    --background-color: #F1F4EB;
+    --background-color: #ecf1e1;
+    /* alabaster */
     --primary-color: #62A87C;
-    --compl-color-1: ;
-    --compl-color-2: ;
-    --compl-color-3: ;
-    --typeface-color: ;
+    /* mint */
+    --compl-color-1: #FED766;
+    /* mustard */
+    --compl-color-2: #89BE9C;
+    /* cambridge blue */
+    --compl-color-3: #509168;
+    /* sea green */
+    --constrast-color-1: #523E79;
+    /* russian violet */
+    --contrast-color-2: #987D7C;
+    /* cinereous */
+    --contrast-color-2: #725B6E;
+    /* chinese violet */
+    --typeface-color: #083632;
+    /* dark green */
 }
 
 * {
