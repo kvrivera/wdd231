@@ -10,9 +10,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css"> <!-- Include before any other CSS reference -->
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/discover.css">
 
     <!-- JS -->
     <script src="scripts/menu.js" defer></script> <!-- responsive nav menu -->
+    <script src="scripts/cards.js" defer></script> <!-- generating 'cards' for places -->
     <script src="scripts/getdates.js" defer></script> <!-- Last modified, current year for &copy in footer -->
 
     <!-- Fonts -->
@@ -49,7 +51,7 @@
         </div>
 
 
-        <nav id="animateme">
+        <nav>
             <ul id="main-menu">
                 <li>
                     <a href="index.html">Home</a>
@@ -64,13 +66,15 @@
         </nav>
     </header>
     <main>
-        <p>
-            I'll display local parks and greenspace here, and allow the user to filter the content of the page...
-        </p>
-        <p>
-            Using JavaScript!
-        </p>
+        <section>
+            <h2>Nurture Your Family in Ottawa's Nature!</h2>
+            <div>
+                This is where the filtering menu will go.
+            </div>
+        </section>
+        <section class="cards"> <!-- where the places 'cards' will generate through JS -->
 
+        </section>
     </main>
     <footer>
         <div class="footer-flexbox">
