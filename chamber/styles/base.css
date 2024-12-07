@@ -119,7 +119,7 @@ nav.open {
 /* INDEX (HOME) HERO IMAGE */
 .hero {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;

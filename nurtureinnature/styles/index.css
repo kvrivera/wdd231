@@ -1,0 +1,48 @@
+:root {
+    --background-color: #ecf1e1;
+    /* alabaster */
+    --primary-color: #62A87C;
+    /* mint */
+    --compl-color-1: #f9da7e;
+    /* mustard */
+    --compl-color-2: #89BE9C;
+    /* cambridge blue */
+    --compl-color-3: #509168;
+    /* sea green */
+    --contrast-color-1: #523E79;
+    /* russian violet */
+    --contrast-color-2: #987D7C;
+    /* cinereous */
+    --contrast-color-2: #725B6E;
+    /* chinese violet */
+    --typeface-color: #083632;
+    /* dark green */
+}
+
+.hero {
+    position: relative;
+
+}
+
+.hero img {
+    width: 100%;
+    background-size: cover;
+    height: auto;
+}
+
+.hero .join-button {
+    position: absolute;
+    left: 3rem;
+    top: 4rem;
+    z-index: 2;
+    border: 0.1rem solid var(--compl-color-1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: var(--compl-color-2);
+    font-size: clamp(1rem, 2vw, 2rem);
+    color: var(--typeface-color);
+}
+
+.hero .join-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(236, 241, 225, 0.7);
+}

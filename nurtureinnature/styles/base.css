@@ -27,6 +27,10 @@
     /* removes bullets from list */
 }
 
+a {
+    text-decoration: none;
+}
+
 .page-banner {
     display: flex;
     flex-direction: row;
@@ -80,6 +84,11 @@ nav.open {
 nav a {
     text-decoration: none;
     /* removes underline from links */
+}
+
+nav li:hover, nav li:hover a {
+    background-color: var(--compl-color-3);
+    color: #fff;
 }
 
 .active::after {
