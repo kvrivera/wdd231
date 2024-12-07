@@ -21,11 +21,10 @@
 
 * {
     font-family: "Nunito Sans", sans-serif;
-}
-
-main {
     background-color: var(--background-color);
 }
+
+
 
 /* 
     font-family: "Nunito Sans", sans-serif;

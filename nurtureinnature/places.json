@@ -1,0 +1,132 @@
+{
+    "places": [
+        {
+            "name": "Tanglewood Park",
+            "type": "park",
+            "address": "30 Woodfield Dr, Nepean",
+            "playground": "yes",
+            "kids": "yes",
+            "walk": "yes",
+            "bathrooms": "no",
+            "sports": "basketball court",
+            "lighting": "yes",
+            "accessible walkway": "yes",
+            "seating": "benches",
+            "picnic": "BYO"
+        },
+        {
+            "name": "Ryan Farm Park",
+            "type": "park",
+            "address": "5 Parkglen Dr, Nepean",
+            "playground": "yes",
+            "kids": "yes",
+            "walk": "no",
+            "bathrooms": "no",
+            "sports": "basketball court",
+            "lighting": "no",
+            "accessible walkway": "yes",
+            "seating": "benches",
+            "picnic": "tables"
+        },
+        {
+            "name": "Primrose Park",
+            "type": [
+                "park",
+                "splashpad"
+            ],
+            "address": "179 Primrose Ave, Ottawa",
+            "playground": "yes",
+            "kids": "yes",
+            "walk": "yes",
+            "bathrooms": "no",
+            "sports": "no",
+            "lighting": "no",
+            "accessible walkway": "yes",
+            "seating": "benches",
+            "picnic": "tables"
+        },
+        {
+            "name": "Firefly Park",
+            "type": [
+                "park"
+            ],
+            "address": "133 Duntroon Cir, Ottawa",
+            "playground": "yes",
+            "kids": "yes",
+            "walk": "no",
+            "bathrooms": "no",
+            "sports": "no",
+            "lighting": "no",
+            "accessible walkway": "no",
+            "seating": "benches",
+            "picnic": "tables"
+        },
+        {
+            "name": "Hummingbird Park",
+            "type": [
+                "park"
+            ],
+            "address": "17 Upwood St, Ottawa",
+            "playground": "yes",
+            "kids": "yes",
+            "walk": "no",
+            "bathrooms": "no",
+            "sports": "no",
+            "lighting": "no",
+            "accessible walkway": "no",
+            "seating": "no",
+            "picnic": "tables"
+        },
+        {
+            "name": "Kaladar Park",
+            "type": [
+                "park",
+                "splashpad"
+            ],
+            "address": "2554 Kaladar Ave, Ottawa",
+            "playground": "yes",
+            "kids": "yes",
+            "walk": "no",
+            "bathrooms": "no",
+            "sports": "football",
+            "lighting": "yes",
+            "accessible walkway": "no",
+            "seating": "no",
+            "picnic": "BYO"
+        },
+        {
+            "name": "Fawn Meadow Park",
+            "type": [
+                "park",
+                "splashpad"
+            ],
+            "address": "165 Meandering Brook Dr, Gloucester",
+            "playground": "yes",
+            "kids": "yes",
+            "walk": "yes",
+            "bathrooms": "no",
+            "sports": "soccer",
+            "lighting": "no",
+            "accessible walkway": "no",
+            "seating": "no",
+            "picnic": "BYO"
+        },
+        {
+            "name": "New Edinburgh Splashpad",
+            "type": [
+                "park",
+                "splashpad"
+            ],
+            "address": "203 Stanley Ave, Ottawa",
+            "playground": "yes",
+            "kids": "yes",
+            "walk": "no",
+            "bathrooms": "no",
+            "sports": "no",
+            "lighting": "no",
+            "accessible walkway": "yes",
+            "seating": "benches",
+            "picnic": "BYO"
+        }
+    ]
+}
