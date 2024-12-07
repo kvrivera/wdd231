@@ -1,0 +1,17 @@
+.discover-nav {
+    text-decoration: none;
+}
+
+#discover-menu {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#discover-menu li {
+    display: block;
+    padding: 1rem;
+    margin: 0.25rem;
+}

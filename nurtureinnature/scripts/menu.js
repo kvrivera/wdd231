@@ -3,7 +3,7 @@
 
 // hamburger button when in mobile view
 const hamButton = document.querySelector('#hamburger');
-const navigation = document.querySelector('#animateme');
+const navigation = document.querySelector('.site-nav');
 
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
