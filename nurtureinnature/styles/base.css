@@ -22,9 +22,64 @@
 * {
     font-family: "Nunito Sans", sans-serif;
     background-color: var(--background-color);
+    color: var(--typeface-color);
 }
 
+ul {
+    list-style-type: none;
+    /* removes bullets from lists */
+}
 
+.page-banner {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0 auto;
+    align-items: center;
+    /* vertically align children */
+}
+
+.page-banner img {
+    margin: 1rem;
+}
+
+/* nav */
+#hamburger::before {
+    content: "☰";
+    font-size: xx-large;
+}
+
+#hamburger.open::before {
+    content: "✖️";
+}
+
+#hamburger {
+    border: none;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+nav a {
+    text-decoration: none;
+    /* removes underline from links */
+}
+
+.active::after {
+    content: " 📍";
+    /* wayfinding symbol */
+}
 
 /* 
     font-family: "Nunito Sans", sans-serif;
