@@ -1,19 +1,53 @@
+:root {
+    --background-color: #ecf1e1;
+    /* alabaster */
+    --primary-color: #62A87C;
+    /* mint */
+    --compl-color-1: #f9da7e;
+    /* mustard */
+    --compl-color-1-faded: #ffe79fa1;
+    --compl-color-2: #89BE9C;
+    /* cambridge blue */
+    --compl-color-3: #509168;
+    /* sea green */
+    --constrast-color-1: #523E79;
+    /* russian violet */
+    --contrast-color-2: #987D7C;
+    /* cinereous */
+    --contrast-color-3: #725B6E;
+    /* chinese violet */
+    --typeface-color: #083632;
+    /* dark green */
+}
+
 .discover-nav {
     text-decoration: none;
+    margin-bottom: 1rem;
 }
 
 #discover-menu {
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
+    /* horizontal centering */
+    align-items: center;
+    /* vertical centering */
 }
 
-#discover-menu li {
+#discover-menu button {
     display: block;
     padding: 1rem;
     margin: 0.25rem;
+    border: .1rem solid var(--compl-color-2);
+    border-radius: .2rem;
+    background-color: var(--compl-color-3);
+    color: #fff;
+}
+
+#discover-menu>button:hover {
+    box-shadow: 0px 12px 16px 0px rgba(232, 235, 37, 0.584);
 }
 
 .cards {
@@ -25,5 +59,11 @@
 }
 
 .cards>section {
+    /* children of .cards */
     padding: 1rem;
+    border-radius: .5rem;
+}
+
+.cards * {
+    background-color: var(--compl-color-1-faded);
 }
