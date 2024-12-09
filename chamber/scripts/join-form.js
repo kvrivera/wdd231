@@ -8,4 +8,3 @@ const words = currentURL.split('-');
 const str = 'Enter to Learn; Go Forth to Serve';
 console.log(str.replace('Go forth', 'Graduate'));
 // Enter to Learn; Graduate to Serve
-

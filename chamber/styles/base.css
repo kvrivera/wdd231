@@ -28,16 +28,22 @@ h1 {
     color: #fff;
 }
 
+h1 {
+    padding: 1rem;
+}
+
 .page-banner {
     display: grid;
     grid-auto-flow: column;
-    gap: 16px;
-    margin: 0 auto;
+    gap: 1rem;
     align-items: center;
+    width: 100%;
 }
 
 .page-banner img {
     margin: 1rem;
+    max-width: 100%;
+    height: auto;
 }
 
 /* MAIN NAV */
@@ -88,6 +94,7 @@ nav.open {
 
 #main-menu li {
     padding: 1rem;
+    display: block;
 }
 
 #main-menu a {
@@ -106,7 +113,7 @@ nav.open {
 }
 
 #main-menu a:hover {
-    font-style: italic;
+    border-bottom: 1rem solid var(--bkgd-hover-color);
 }
 
 /* wayfinding symbol to show the current page */
@@ -124,7 +131,6 @@ nav.open {
     display: flex;
     flex-direction: column;
     /*height: (400px, 50vh, 800px);*/
-    max-height: 800px;
     margin-bottom: .5rem;
 }
 
@@ -366,7 +372,8 @@ footer p {
     }
 
     .page-banner img {
-        width: 200px;
+        max-width: 100%;
+        height: auto;
     }
 
     nav {
