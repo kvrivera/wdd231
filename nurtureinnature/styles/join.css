@@ -1,10 +1,68 @@
 /* CSS for JOIN page */
 /* Includes CSS for HTML form */
 
+:root {
+    --background-color: #ecf1e1;
+    /* alabaster */
+    --primary-color: #62A87C;
+    /* mint */
+    --compl-color-1: #f9da7e;
+    /* mustard */
+    --compl-color-2: #89BE9C;
+    /* cambridge blue */
+    --compl-color-3: #509168;
+    /* sea green */
+    --constrast-color-1: #523E79;
+    /* russian violet */
+    --contrast-color-2: #987D7C;
+    /* cinereous */
+    --contrast-color-2: #725B6E;
+    /* chinese violet */
+    --typeface-color: #083632;
+    /* dark green */
+}
+
 section {
     padding: 3rem;
 }
 
 section p {
     text-align: center;
+}
+
+.queryForm {
+    margin: 1rem;
+
+    label {
+        display: block;
+        font-size: 1rem;
+        padding-top: .3rem;
+    }
+
+    input,
+    select {
+        display: block;
+        width: 250px;
+        border-radius: .2rem;
+        padding: .35rem;
+        border: .1rem solid var(--typeface-color);
+        /* this margin (below) puts space between each entry field */
+        margin: 0.1rem 0 1rem 0;
+    }
+
+    .formSubmitButton {
+        text-align: center;
+        border-radius: .5rem;
+        padding: 1rem;
+        width: 15rem;
+        background-color: var(--compl-color-2);
+        color: var(--typeface-color);
+        border: .2rem solid var(--compl-color-3);
+    }
+
+    .formSubmitButton:hover {
+        background-color: var(--constrast-color-1);
+        color: #fff;
+        border: .2rem solid var(--compl-color-2);
+    }
 }

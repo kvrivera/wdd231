@@ -10,6 +10,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css"> <!-- Include before any other CSS reference -->
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
 
     <!-- JS -->
     <script src="scripts/menu.js" defer></script> <!-- responsive nav menu -->
@@ -68,7 +69,59 @@
         </nav>
     </header>
     <main>
-        <h2>Join Page Coming Soon!</h2>
+        <h2>Join the Woodstock Area Chamber!</h2>
+
+        <form action="/nurtureinnature/thankyou.html" method="get" class="queryForm" target="_blank" autocompelte="on">
+            <!-- First name -->
+            <label>First Name <input type="text" name="first" required autocomplete="given-name" placeholder="John/Jane"
+                    title="Your First Name"></label>
+            <!-- Last name -->
+            <label>Last Name<input type="text" name="last" required autocomplete="family-name" placeholder="Doe"
+                    title="Your Last Name"></label>
+
+            <!-- Email -->
+            <!-- add placeholder email -->
+            <label>Email<input type="email" name="email" required autocomplete="email" placeholder="youremail@gmail.com"
+                    title="Your Email Address"></label>
+
+            <!-- Mobile phone number-->
+            <label>Phone Number<input type="tel" name="telephone" required autocomplete="tel" placeholder="987-555-1234"
+                    title="Your Telephone Number"></label>
+
+            <h3>Organization Details</h3>
+            <!-- Business/ Org Name-->
+            <label>Name of Organization<input type="text" name="organization-name" required autocomplete="organization"
+                    title="Your Organization's Name"></label>
+
+            <!-- Organizational Title (not required)-->
+            <!-- pattern to only accept alpha, hyphens, spaces, min of seven characters using regular expression-->
+            <label>Your Organizational Title<input type="text" name="title" autocomplete="organization-title"
+                    title="Your Organizational Title"></label>
+
+            <!-- Membership Level -->
+            <label>Membership Level
+                <select name="membershipLevel" required>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Non-profit">Non-profit</option>
+                </select>
+            </label>
+
+            <!-- Bus/Org Description -->
+            <label>Briefly describe your organization<textarea id="description" name="description" rows="4"
+                    placeholder="Who do you serve in the community? What services do you offer?"
+                    title="Describe Your Organization"></textarea></label>
+
+            <!-- Timestamp -->
+            <!--the timestamp, hidden type, name, and id. This field contains the current date and time that the form was loaded by the user.-->
+            <input type="time" type="hidden" id="timestamp" name="timestamp">
+
+
+            <!-- Submit button -->
+            <input type="submit" value="Apply Now" class="formSubmitButton">
+        </form>
+
     </main>
     <footer>
         <div>
