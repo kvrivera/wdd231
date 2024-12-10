@@ -32,17 +32,34 @@ function show(cup) {
     return (result);
 } // end show
 
+
+// function to replace multiple substrings in the timestamp url value
+function timestampReplace(timestamp) {
+    timestamp = timestamp.replace(/%2F/g, "/");
+    timestamp = timestamp.replace(/%2C/g, " ");
+    timestamp = timestamp.replace(/%3A/g, ":")
+    timestamp = timestamp.replace(/\+/g, " ");
+    return timestamp;
+}
+
+
+
+
+
+
+
 const showInfo = document.querySelector('#results');
 showInfo.innerHTML = `
 <p>Form submitted by: ${show('first')} ${show('last')}</p>
 <p>Email: <a href="mailto:${show("email")}">${show("email")}</a></p>
 <p>Phone number: ${show("telephone")}</p>
-<p>Organization: ${show("organization")}</p>
+<p>Organization: ${show("organization").replace("+", " ")}</p>
 <p>Membership level selected: ${show("membershipLevel")}</p>
-<p>Application submitted: ${show("timestamp")}</p>
+<p>Application submitted: ${timestampReplace(show("timestamp"))}</p>
 `;
-// this will show, for eg: phone=2098340928
-// let's find a way to remove 'phone=' from the result...
+
+// timestamp will show up something like this:
+// 12%2F10%2F2024%2C+1%3A13%3A33+AM
 
 
 
