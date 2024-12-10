@@ -16,27 +16,30 @@ formData = formData.split('&');
 console.log(formData);
 
 function show(cup) {
-    console.log(cup)
+    console.log(cup);
 
     formData.forEach((element) => {
-        console.log(element);
         // ask if each element starts with the parameter we sent through the function (in this case, cup)
         if (element.startsWith(cup)) {
             // cut the, for eg: 'phone=' off
             // and now only show what is after, for eg: 'last.' (do this using [1])
             // .replace("%40", "@") fixes the coding for "@" that takes place when data is stored in a URL
             result = element.split("=")[1].replace("%40", "@");
+            console.log(result);
 
         } // end if
-        return (result)
     })
-
+    return (result);
 } // end show
 
 const showInfo = document.querySelector('#results');
 showInfo.innerHTML = `
-<p>Form submitted by: ${show("first")} ${show("last")}</p>
-<p>Organization: ${show("")}</p>
+<p>Form submitted by: ${show('first')} ${show('last')}</p>
+<p>Email: <a href="mailto:${show("email")}">${show("email")}</a></p>
+<p>Phone number: ${show("telephone")}</p>
+<p>Organization: ${show("organization")}</p>
+<p>Membership level selected: ${show("membershipLevel")}</p>
+<p>Application submitted: ${show("timestamp")}</p>
 `;
 // this will show, for eg: phone=2098340928
 // let's find a way to remove 'phone=' from the result...
