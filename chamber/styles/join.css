@@ -64,6 +64,10 @@ section p {
     }
 }
 
+select::invalid {
+    color: grey;
+}
+
 /* Cards to display membership levels */
 .memLevelCards {
     display: flex;

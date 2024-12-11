@@ -42,7 +42,7 @@
 <body>
     <header>
         <div class="page-banner">
-            <img src="images/logo.webp" width="300" height="auto"
+            <img src="images/logo.webp" width="300"
                 alt="Logo of WACCI (Woodstock Area Chamber of Commerce and Industry).">
             <h1>
                 Woodstock Area Chamber of Commerce and Industry
@@ -71,7 +71,7 @@
     <main>
         <h2>Join the Woodstock Area Chamber!</h2>
 
-        <form action="/chamber/thankyou.html" method="get" class="queryForm" target="_blank" autocompelte="on">
+        <form action="/chamber/thankyou.html" method="get" class="queryForm" target="_blank" autocomplete="on">
             <!-- First name -->
             <label>First Name <input type="text" name="first" required autocomplete="given-name" placeholder="John/Jane"
                     title="Your First Name"></label>
@@ -101,6 +101,7 @@
             <!-- Membership Level -->
             <label>Membership Level
                 <select name="membershipLevel" required>
+                    <option value="">Select your membership level</option>
                     <option value="Gold">Gold</option>
                     <option value="Silver">Silver</option>
                     <option value="Bronze">Bronze</option>
