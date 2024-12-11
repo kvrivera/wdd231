@@ -32,6 +32,11 @@ h1 {
     padding: 1rem;
 }
 
+h2 {
+    font-family: var(--special-font);
+    font-size: xx-large;
+}
+
 .page-banner {
     display: grid;
     grid-auto-flow: column;
@@ -42,7 +47,7 @@ h1 {
 
 .page-banner img {
     margin: 1rem;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -106,6 +111,7 @@ nav.open {
 #active {
     background-color: var(--bkgd-hover-color);
 }
+
 /* wayfinding symbol to show the current page */
 .active::after {
     content: " 📍";
@@ -146,10 +152,6 @@ nav.open {
     position: absolute;
     top: 4rem;
     left: 2rem;
-    border: 1px solid var(--secondary-color);
-    border-radius: 1rem;
-    padding: .7rem;
-    background-color: #236E26;
     color: white;
     z-index: 2;
     /* Ensure it stays above other content */
@@ -157,13 +159,19 @@ nav.open {
     /* Minimum of 1rem, scales with 2vw, max of 2rem */
 }
 
-.hero .join-button:hover {
+.join-button {
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+    padding: .7rem;
+    background-color: #236E26;
+    color: white;
+}
+
+.join-button:hover {
     background-color: var(--secondary-accent);
 }
 
 main {
-    margin: 0 auto;
-    padding: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -337,12 +345,63 @@ main {
     height: auto;
     border-radius: 1rem;
     padding: .5rem;
+    transition: transform 0.3s ease-in-out;
+    /*this is for the :hover class effect to be more smooth*/
+}
+
+.discover-imgs img:hover {
+    transform: scale(1.1);
+    /* increases the size of the image by 10%*/
 }
 
 figcaption {
     text-align: center;
+    padding: 1rem;
 }
 
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sidebar h3 {
+    font-family: var(--special-font);
+    font-size: xx-large;
+}
+
+.sidebar div {
+    text-align: center;
+    border: .2rem solid var(--nav-bkgd-color);
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.sidebar div,
+.sidebar div>*,
+.sidebar figcaption {
+    background-color: #dfe2e5;
+    border-radius: 1rem;
+}
+
+.sidebar div a {
+    text-decoration: none;
+    font-size: large;
+}
+
+.sidebar div a:hover {
+    color: var(--secondary-color);
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.sidebar p {
+    padding: 1rem;
+}
 
 /* FOOTER */
 /* FOOTER */
@@ -354,6 +413,7 @@ footer div,
 footer div>* {
     background-color: var(--nav-bkgd-color) !important;
     color: #fff;
+    width: 100%;
 }
 
 footer div.footer-flexbox {
@@ -432,6 +492,11 @@ footer p {
         display: grid;
     }
 
+    .sidebarGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     footer div.footer-flexbox {
         flex-direction: row;
         align-items: center;
@@ -441,6 +506,4 @@ footer p {
         margin: 0 auto;
         /* centers the p elements in their parent container */
     }
-
-
 }
