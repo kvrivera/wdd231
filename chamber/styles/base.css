@@ -406,7 +406,7 @@ figcaption {
 /* FOOTER */
 /* FOOTER */
 /* FOOTER */
-footer,
+footer >*,
 footer div,
 .lastMod,
 .currentYear,
