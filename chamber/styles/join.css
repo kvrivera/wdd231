@@ -19,52 +19,54 @@ section p {
 
 .queryForm {
     margin: 1rem;
-
-    label {
-        display: block;
-        font-size: 1rem;
-        padding-top: .3rem;
-    }
-
-    input,
-    select,
-    input:focus,
-    textarea {
-        display: block;
-        width: 250px;
-        border-radius: .2rem;
-        padding: .35rem;
-        border: .1rem solid var(--nav-bkgd-color);
-        /* this margin (below) puts space between each entry field */
-        margin: 0.1rem 0 1rem 0;
-    }
-
-    .formSubmitButton {
-        text-align: center;
-        border-radius: .5rem;
-        padding: 1rem;
-        width: 15rem;
-        background-color: var(--nav-bkgd-color);
-        border: .2rem solid var(--bkgd-hover-color);
-        color: #fff;
-    }
-
-    .formSubmitButton:hover {
-        background-color: var(--secondary-color);
-        color: #fff;
-        border: .2rem solid var(--secondary-accent);
-    }
-
-    input:required {
-        border: 2px solid #e13008;
-    }
-
-    input:required:valid {
-        border: 2px solid #257d02;
-    }
 }
 
-select::invalid {
+
+
+label {
+    display: block;
+    font-size: 1rem;
+    padding-top: .3rem;
+}
+
+input,
+select,
+input:focus,
+textarea {
+    display: block;
+    width: 250px;
+    border-radius: .2rem;
+    padding: .35rem;
+    border: .1rem solid var(--nav-bkgd-color);
+    /* this margin (below) puts space between each entry field */
+    margin: 0.1rem 0 1rem 0;
+}
+
+.formSubmitButton {
+    text-align: center;
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 15rem;
+    background-color: var(--nav-bkgd-color);
+    border: .2rem solid var(--bkgd-hover-color);
+    color: #fff;
+}
+
+.formSubmitButton:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: .2rem solid var(--secondary-accent);
+}
+
+input:required {
+    border: 2px solid #e13008;
+}
+
+input:required:valid {
+    border: 2px solid #257d02;
+}
+
+select:invalid {
     color: grey;
 }
 
