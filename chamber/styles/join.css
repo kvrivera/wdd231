@@ -71,13 +71,13 @@ select:invalid {
 }
 
 /* Cards to display membership levels */
-.memLevelCards {
+.sidebarCards {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.memLevelCards div {
+.sidebarCards div {
     border: .1rem solid var(--bkgd-hover-color);
     border-radius: .3rem;
     background-color: #7d82b8;
@@ -86,7 +86,7 @@ select:invalid {
     color: #fff;
 }
 
-.memLevelCards h3 {
+.sidebarCards h3 {
     background-color: #7d82b8;
     color: #fff;
     font-size: x-large;

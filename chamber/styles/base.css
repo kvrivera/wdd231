@@ -106,6 +106,10 @@ nav.open {
 #active {
     background-color: var(--bkgd-hover-color);
 }
+/* wayfinding symbol to show the current page */
+.active::after {
+    content: " 📍";
+}
 
 #main-menu a:visited {
     text-decoration: none;
@@ -114,11 +118,6 @@ nav.open {
 
 #main-menu a:hover {
     border-bottom: 1rem solid var(--bkgd-hover-color);
-}
-
-/* wayfinding symbol to show the current page */
-.active::after {
-    content: " 📍";
 }
 
 /* INDEX (HOME) HERO IMAGE */
@@ -285,7 +284,6 @@ main {
 /* HOME PAGE INFO-PANEL-FLEXBOX */
 /* HOME PAGE INFO-PANEL-FLEXBOX */
 /* HOME PAGE INFO-PANEL-FLEXBOX */
-.info-panel-heading {}
 
 .info-panel-flexbox {
     display: flex;
@@ -333,6 +331,18 @@ main {
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
+.discover-imgs img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+figcaption {
+    text-align: center;
+}
+
 
 /* FOOTER */
 /* FOOTER */
