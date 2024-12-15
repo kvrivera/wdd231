@@ -49,7 +49,6 @@ function timestampReplace(timestamp) {
 
 
 const showInfo = document.querySelector('#results');
-console.log(showInfo.innerHTML);
 showInfo.innerHTML = `
 <p>Form submitted by: ${show('first')} ${show('last')}</p>
 <p>Email: <a href="mailto:${show("email")}">${show("email")}</a></p>

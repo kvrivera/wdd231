@@ -26,15 +26,47 @@ section {
     padding: 3rem;
 }
 
-section p {
+p {
     text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {}
+
+.queryForm {
+    width: 100%;
+}
+
+.queryForm p {
+    text-align: left;
+}
+
+.queryForm label.cb {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-left: 0;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.queryForm label.cb input[type="checkbox"] {
+    margin: 0;
+    padding-left: 0;
+    /* Remove default margin */
+
 }
 
 .queryForm {
     margin: 1rem;
 
     label {
-        display: block;
         font-size: 1rem;
         padding-top: .3rem;
     }
@@ -42,12 +74,18 @@ section p {
     input,
     select {
         display: block;
-        width: 250px;
         border-radius: .2rem;
         padding: .35rem;
         border: .1rem solid var(--typeface-color);
         /* this margin (below) puts space between each entry field */
         margin: 0.1rem 0 1rem 0;
+    }
+
+    input[type="text"],
+    input[type="type"],
+    input[type="email"],
+    select {
+        width: 250px;
     }
 
     .formSubmitButton {
@@ -65,4 +103,17 @@ section p {
         color: #fff;
         border: .2rem solid var(--compl-color-2);
     }
+
+    input:required {
+        border: 2px solid #e13008;
+    }
+    
+    input:required:valid {
+        border: 2px solid #257d02;
+    }
+    
+    select:invalid {
+        color: grey;
+    }
+    
 }

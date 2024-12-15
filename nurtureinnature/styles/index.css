@@ -30,7 +30,7 @@
     height: auto;
 }
 
-.hero .join-button {
+.hero .contribute-button {
     position: absolute;
     left: 3rem;
     top: 4rem;
@@ -43,6 +43,6 @@
     color: var(--typeface-color);
 }
 
-.hero .join-button:hover {
+.hero .contribute-button:hover {
     box-shadow: 0 12px 16px 0 rgba(236, 241, 225, 0.7);
 }

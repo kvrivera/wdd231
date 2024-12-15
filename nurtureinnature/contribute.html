@@ -10,10 +10,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css"> <!-- Include before any other CSS reference -->
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/contribute.css">
 
     <!-- JS -->
     <script src="scripts/menu.js" defer></script> <!-- responsive nav menu -->
+    <script src="scripts/contribute.js" defer></script>
+    <!--form-->
+    <script src="scripts/timestamp.js" defer></script> <!--timestamp for HTML form-->
     <script src="scripts/getdates.js" defer></script> <!-- Last modified, current year for &copy in footer -->
 
     <!-- Fonts -->
@@ -58,57 +61,75 @@
                     <a href="discover.html">Discover</a>
                 </li>
                 <li>
-                    <a href="join.html" class="active">Join</a>
+                    <a href="contribute.html" class="active">Contribute</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Join WACCI!</h2>
+        <h2>Recommend a Park!</h2>
 
-        <form action="/nurtureinnature/thankyou.html" method="get" class="queryForm" target="_blank" autocompelte="on">
-            <!-- First name -->
-            <label>First Name <input type="text" name="first" required autocomplete="given-name"
-                    title="Your First Name"></label>
-            <!-- Last name -->
-            <label>Last Name<input type="text" name="last" required autocomplete="family-name"
-                    title="Your Last Name"></label>
+        <p>Do you have a park, greenspace or trail that you love, but can't find it on our website?</p>
 
-            <!-- Organizational Title (not required)-->
-            <!-- pattern to only accept alpha, hyphens, spaces, min of seven characters using regular expression-->
-            <label>Your Organizational Title<input type="text" name="title" autocomplete="organization-title"
-                    title="Your Organizational Title"></label>
+        <p>Let us know below! (All fields required.)</p>
+        <div class="form-container">
+            <form action="/nurtureinnature/thankyou.html" method="get" class="queryForm" target="_blank"
+                autocomplete="on">
+                <!-- First name -->
+                <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                        placeholder="John/Jane" title="Your First Name"></label>
+                <!-- Last name -->
+                <label>Last Name<input type="text" name="last" required autocomplete="family-name" placeholder="Doe"
+                        title="Your Last Name"></label>
 
-            <!-- Email -->
-            <!-- add placeholder email -->
-            <label>Email<input type="email" name="email" required autocomplete="email"
-                    title="Your Email Address"></label>
+                <!-- Email -->
+                <label>Email<input type="email" name="email" required autocomplete="email"
+                        placeholder="youremail@gmail.com" title="Your Email Address"></label>
 
-            <!-- Mobile phone number-->
-            <label>Phone Number<input type="tel" name="telephone" required autocomplete="tel"
-                    title="Your Telephone Number"></label>
+                <h3>Location Details</h3>
+                <!-- Location Type -->
+                <label>Location type:
+                    <select name="locationType" required>
+                        <option value="" selected disabled hidden>What type of location is it?</option>
+                        <option value="Park">Park</option>
+                        <option value="Greenspace">Greenspace</option>
+                        <option value="Trail">Trail</option>
+                    </select>
+                </label>
 
-            <!-- Business/ Org Name-->
-            <label>Name of Organization<input type="text" name="organization-name" required autocomplete="organization"
-                    title="Your Organization's Name"></label>
+                <!-- Location Name-->
+                <label>Location Name<input type="text" name="location-name" required
+                        title="Your Recommended Location's Name"></label>
 
-            <!-- Membership Level -->
-            <label>Membership Level
-                <select name="membershipLevel" required>
-                    <option value="Gold">Gold</option>
-                    <option value="Silver">Silver</option>
-                    <option value="Bronze">Bronze</option>
-                    <option value="Non-profit">Non-profit</option>
-                </select>
-            </label>
+                <!-- Location Address -->
+                <label>Address<input type="text" name="location" required
+                        title="Your Recommended Location's Address"></label>
 
-            <!-- Bus/Org Description -->
+                <!--Checkbox input for park details-->
+                <p>Does your park have...?</p>
+                <label class="cb">
+                    <input type="checkbox" name="accessibility" value="accessibleWalkways">
+                    Accessible Walkways
+                </label>
+                <label class="cb">
+                    <input type="checkbox" name="bathrooms" value="washrooms">
+                    Public Washrooms
+                </label>
+                <label class="cb">
+                    <input type="checkbox" name="playground" value="playground">
+                    Playground Equipment
+                </label>
 
-            <!-- Timestamp -->
+                <!-- Timestamp -->
+                <!--the timestamp, hidden type, name, and id. This field contains the current date and time that the form was loaded by the user.-->
+                <input type="hidden" id="timestamp" name="timestamp" value="">
 
-            <!-- Submit button -->
-            <input type="submit" value="Apply Now" class="formSubmitButton">
-        </form>
+
+                <!-- Submit button -->
+                <input type="submit" value="Tell Us About This Place!" class="formSubmitButton">
+            </form>
+        </div>
+
 
     </main>
     <footer>
