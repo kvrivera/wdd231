@@ -71,24 +71,24 @@
 
         <p>Do you have a park, greenspace or trail that you love, but can't find it on our website?</p>
 
-        <p>Let us know below! (All fields required.)</p>
+        <p>Let us know below!</p>
         <div class="form-container">
             <form action="/nurtureinnature/thankyou.html" method="get" class="queryForm" target="_blank"
                 autocomplete="on">
                 <!-- First name -->
-                <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                <label>* First Name <input type="text" name="first" required autocomplete="given-name"
                         placeholder="John/Jane" title="Your First Name"></label>
                 <!-- Last name -->
-                <label>Last Name<input type="text" name="last" required autocomplete="family-name" placeholder="Doe"
+                <label>* Last Name<input type="text" name="last" required autocomplete="family-name" placeholder="Doe"
                         title="Your Last Name"></label>
 
                 <!-- Email -->
-                <label>Email<input type="email" name="email" required autocomplete="email"
+                <label>* Email<input type="email" name="email" required autocomplete="email"
                         placeholder="youremail@gmail.com" title="Your Email Address"></label>
 
                 <h3>Location Details</h3>
                 <!-- Location Type -->
-                <label>Location type:
+                <label>* Location Type:
                     <select name="locationType" required>
                         <option value="" selected disabled hidden>What type of location is it?</option>
                         <option value="Park">Park</option>
@@ -98,11 +98,11 @@
                 </label>
 
                 <!-- Location Name-->
-                <label>Location Name<input type="text" name="location-name" required
+                <label>* Location Name<input type="text" name="location-name" required
                         title="Your Recommended Location's Name"></label>
 
                 <!-- Location Address -->
-                <label>Address<input type="text" name="location" required
+                <label>* Address<input type="text" name="location" required
                         title="Your Recommended Location's Address"></label>
 
                 <!--Checkbox input for park details-->

@@ -135,7 +135,7 @@ footer * {
 
 /* media queries */
 @media (min-width: 768px) {
-    nav {
+    .site-nav {
         grid-template-rows: 1fr;
     }
 
@@ -154,5 +154,12 @@ footer * {
 
     #hamburger {
         display: none;
+    }
+
+
+    #main-menu li {
+        justify-content: space-evenly;
+        padding: .5rem;
+        font-size: larger;
     }
 }

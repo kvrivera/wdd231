@@ -46,20 +46,24 @@ function timestampReplace(timestamp) {
 
 
 
+// Once the DOM has fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    const showInfo = document.querySelector('#results');
+
+    showInfo.innerHTML = `
+    <p>Form submitted by: ${show('first')} ${show('last')}</p>
+    <p>Email: <a href="mailto:${show("email")}">${show("email")}</a></p>
+    <p>Location: ${show("location-name").replace("+", " ")}</p>
+    <p>Location type: ${show("locationType")}</p>
+    <p>Application submitted: ${timestampReplace(show("timestamp"))}</p>
+    `;
+
+    // timestamp will show up something like this:
+    // 12%2F10%2F2024%2C+1%3A13%3A33+AM
+});
 
 
-const showInfo = document.querySelector('#results');
-showInfo.innerHTML = `
-<p>Form submitted by: ${show('first')} ${show('last')}</p>
-<p>Email: <a href="mailto:${show("email")}">${show("email")}</a></p>
-<p>Phone number: ${show("telephone")}</p>
-<p>Organization: ${show("organization").replace("+", " ")}</p>
-<p>Membership level selected: ${show("membershipLevel")}</p>
-<p>Application submitted: ${timestampReplace(show("timestamp"))}</p>
-`;
 
-// timestamp will show up something like this:
-// 12%2F10%2F2024%2C+1%3A13%3A33+AM
 
 
 
