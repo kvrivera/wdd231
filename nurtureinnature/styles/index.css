@@ -68,3 +68,15 @@ p,
     margin: 1rem;
     padding: 1rem;
 }
+
+@media (min-width: 768px) {
+
+    .sidepanel {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sidepanel .info-panel-flexbox {
+        width: 100%;
+    }
+}

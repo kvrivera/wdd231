@@ -123,6 +123,10 @@ footer * {
     margin: 0.25rem;
 }
 
+footer {
+    padding: 2rem;
+}
+
 /* 
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
