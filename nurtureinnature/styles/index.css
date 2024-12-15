@@ -46,3 +46,25 @@
 .hero .contribute-button:hover {
     box-shadow: 0 12px 16px 0 rgba(236, 241, 225, 0.7);
 }
+
+.welcomeMsg,
+.welcomeMsg>* {
+    background-color: var(--contrast-color-2);
+    color: #fff;
+    padding: 1rem;
+    font-size: large;
+}
+
+p,
+.info-panel-flexbox {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+}
+
+.info-panel-flexbox>* {
+    border: solid .2rem var(--compl-color-2);
+    border-radius: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+}
